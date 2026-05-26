@@ -1,5 +1,5 @@
 import * as logger from 'firebase-functions/logger';
-import { firestore } from '../firebase/firebase.config.js';
+import { firestore } from '../infrastructure/database/firebase/firebase.config.js';
 import type { NotificationRepository } from '../domain/repositories/NotificationRepository.js';
 import { SMART_NOTIFICATION_MESSAGES, INACTIVE_MESSAGES } from '../config/smartNotifications.config.js';
 import type { TimeSlot } from '../config/smartNotifications.config.js';

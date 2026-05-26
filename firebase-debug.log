@@ -1,0 +1,42 @@
+[debug] [2026-05-26T08:11:29.558Z] ----------------------------------------------------------------------
+[debug] [2026-05-26T08:11:29.562Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vignesh.ra\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2026-05-26T08:11:29.562Z] CLI Version:   15.18.0
+[debug] [2026-05-26T08:11:29.563Z] Platform:      win32
+[debug] [2026-05-26T08:11:29.563Z] Node Version:  v22.16.0
+[debug] [2026-05-26T08:11:29.563Z] Time:          Tue May 26 2026 13:41:29 GMT+0530 (India Standard Time)
+[debug] [2026-05-26T08:11:29.563Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-05-26T08:11:31.643Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-26T08:11:31.643Z] > authorizing via signed-in user (reachmandyou@gmail.com)
+[debug] [2026-05-26T08:11:31.643Z] [iam] checking project me-and-you-11e89 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2026-05-26T08:11:31.644Z] Checked if tokens are valid: true, expires at: 1779784767344
+[debug] [2026-05-26T08:11:31.644Z] Checked if tokens are valid: true, expires at: 1779784767344
+[debug] [2026-05-26T08:11:31.645Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/me-and-you-11e89:testIamPermissions [none]
+[debug] [2026-05-26T08:11:31.645Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/me-and-you-11e89:testIamPermissions  x-goog-user-project=me-and-you-11e89
+[debug] [2026-05-26T08:11:31.646Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/me-and-you-11e89:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2026-05-26T08:11:33.016Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/me-and-you-11e89:testIamPermissions 200
+[debug] [2026-05-26T08:11:33.016Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/me-and-you-11e89:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2026-05-26T08:11:33.017Z] Checked if tokens are valid: true, expires at: 1779784767344
+[debug] [2026-05-26T08:11:33.017Z] Checked if tokens are valid: true, expires at: 1779784767344
+[debug] [2026-05-26T08:11:33.017Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/me-and-you-11e89/serviceAccounts/me-and-you-11e89@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2026-05-26T08:11:33.017Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/me-and-you-11e89/serviceAccounts/me-and-you-11e89@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2026-05-26T08:11:34.650Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/me-and-you-11e89/serviceAccounts/me-and-you-11e89@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2026-05-26T08:11:34.650Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/me-and-you-11e89/serviceAccounts/me-and-you-11e89@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[info] 
+[info] === Deploying to 'me-and-you-11e89'...
+[info] 
+[info] i  deploying functions 
+[info] Running command: npm run build
+[info] +  functions: Finished running predeploy script. 
+[debug] [2026-05-26T08:11:37.589Z] Checked if tokens are valid: true, expires at: 1779784767344
+[debug] [2026-05-26T08:11:37.589Z] Checked if tokens are valid: true, expires at: 1779784767344
+[debug] [2026-05-26T08:11:37.589Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/me-and-you-11e89 [none]
+[debug] [2026-05-26T08:11:37.908Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/me-and-you-11e89 200
+[debug] [2026-05-26T08:11:37.908Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/me-and-you-11e89 {"projectNumber":"170946286094","projectId":"me-and-you-11e89","lifecycleState":"ACTIVE","name":"Me and You","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2026-02-06T18:27:31.003216Z"}
+[info] i  functions: preparing codebase default for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2026-05-26T08:11:37.913Z] Checked if tokens are valid: true, expires at: 1779784767344
+[debug] [2026-05-26T08:11:37.913Z] Checked if tokens are valid: true, expires at: 1779784767344
+[debug] [2026-05-26T08:11:37.913Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/me-and-you-11e89/adminSdkConfig [none]

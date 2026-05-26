@@ -14,3 +14,6 @@ export const broadcastJob = scheduledSmartBroadcast;
 
 // 2. Midnight reset job: Runs at 00:00 IST
 export const midnightResetJob = resetDailyNotificationCounter;
+
+// 3. Firestore Document Update Triggers
+export * from './functions/firestoreTriggers.js';

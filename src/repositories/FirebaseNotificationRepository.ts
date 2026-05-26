@@ -1,5 +1,5 @@
 import * as logger from 'firebase-functions/logger';
-import { messaging } from '../firebase/firebase.config.js';
+import { messaging } from '../infrastructure/database/firebase/firebase.config.js';
 import { Notification } from '../domain/entities/Notification.js';
 import { BroadcastNotification } from '../domain/entities/BroadcastNotification.js';
 import type { NotificationRepository } from '../domain/repositories/NotificationRepository.js';

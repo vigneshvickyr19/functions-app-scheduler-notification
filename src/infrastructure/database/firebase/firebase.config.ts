@@ -48,4 +48,5 @@ app = initializeFirebase();
 export const firebaseApp = app;
 export const auth = getAuth(app);
 export const firestore = getFirestore(app);
+export const db = firestore; // Alias for blueprint compatibility
 export const messaging: Messaging = getMessaging(app);

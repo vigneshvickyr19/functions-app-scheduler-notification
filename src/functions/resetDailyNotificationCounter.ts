@@ -1,6 +1,6 @@
 import { onSchedule } from 'firebase-functions/v2/scheduler';
 import * as logger from 'firebase-functions/logger';
-import { firestore } from '../firebase/firebase.config.js';
+import { firestore } from '../infrastructure/database/firebase/firebase.config.js';
 import { DailySmartBroadcastUseCase } from '../usecases/DailySmartBroadcastUseCase.js';
 import { FirebaseNotificationRepository } from '../repositories/FirebaseNotificationRepository.js';
 
